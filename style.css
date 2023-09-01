@@ -1,0 +1,178 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.backgroundImg{
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    height: 380px;
+    z-index:-1;
+}
+.backgroundImg img{
+    width:100%;
+    height:100%;
+}
+
+body {
+    display:flex;
+    justify-content: center;
+}
+.container{
+ /* background-color: yellow;  */
+width: 100%;
+max-width:500px;
+margin:0px 50px;
+margin-top: 120px;
+}
+.content{
+    color: antiquewhite;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+}
+.content p{
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 15px;
+} 
+.content img{
+    height: 25px;
+    width: 25px;
+}
+.checkbox{
+    width:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox .check{
+   cursor: pointer;
+   width: 23px;
+   height: 23px;
+   /* background-color: red; */
+   border: 2px solid rgb(94, 88, 88);
+   border-radius: 50%;
+   /* margin: 40px; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+
+.checkbox .check img.visible {
+    display: block;
+  }
+  
+  .checkbox .check img {
+    display: none;
+  }
+  .completed {
+    text-decoration: line-through;
+  }
+
+
+
+.newTodo{
+    display: flex;
+background-color:rgb(45, 51, 45);
+    margin-top:50px; 
+    height: 60px;
+    border-radius: 5px;
+}
+.newTodo form{
+    display: flex;
+    flex-grow:1 ;
+}
+.newTodo form input{
+display: flex;
+align-items: center;
+flex-grow: 1;
+background-color: transparent;
+border: none;
+outline: none;
+}
+/* .checkbox input[type="checkbox"]:before {
+    accent-color: transparent;
+
+} */
+.todolist{
+    margin-top: 50px;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 10px 3px 43px 1px;
+}
+.listContent{
+    display: flex;
+    background-color: rgb(45, 51, 45);
+    height: 50px;
+    border-bottom: 2px solid rgb(75, 72, 72);
+    color: antiquewhite;
+    font-size: 19px;
+    cursor: pointer;
+    
+}
+
+.listContent .text{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+} 
+
+
+.del{
+    width:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.container .listContent:hover{
+   transform: translate(-2px);
+box-shadow: 1px 2px 5px 0px ;
+border-color: rgb(43, 43, 43);
+transition: all 0.25 ease;
+} 
+
+.todoInfo {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(45, 51, 45);
+    display: flex;
+    align-items: center;
+    color: hsl(235, 12%, 32%);
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.choice {
+    display: flex;
+    justify-content: center;
+}
+
+.choice span  {
+    padding: 0 4px;
+    cursor: pointer;
+}
+
+.clear {
+    cursor: pointer;
+    text-align: end;
+}
+
+.choice span:hover, .clear:hover {
+    color: hsl(220, 98%, 61%);
+}
+
+.choice .active  {
+    color: hsl(220, 98%, 61%);
+}
